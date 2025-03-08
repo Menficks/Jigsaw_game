@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rompecabezas Especial</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Pantalla de Contraseña -->
+  <div id="password-screen">
+    <div class="hearts-container"></div>
+    <div id="pin-container">
+      <h2>El día que comenzó todo...</h2>
+      <div id="pin-display"></div>
+      <div id="pin-keypad">
+        <button class="pin-btn">1</button>
+        <button class="pin-btn">2</button>
+        <button class="pin-btn">3</button>
+        <button class="pin-btn">4</button>
+        <button class="pin-btn">5</button>
+        <button class="pin-btn">6</button>
+        <button class="pin-btn">7</button>
+        <button class="pin-btn">8</button>
+        <button class="pin-btn">9</button>
+        <button class="pin-btn">0</button>
+        <button class="pin-btn" id="pin-clear">Borrar</button>
+        <button class="pin-btn" id="pin-ok">OK</button>
+      </div>
+      <div id="pin-message"></div>
+    </div>
+  </div>
+
+  <!-- Contenedor del Juego (oculto inicialmente) -->
+  <div id="game-container" style="display:none;">
+    <h1>Rompecabezas Especial ❤️</h1>
+    <div id="board-container"></div>
+    <div id="pieces-container"></div>
+    <button id="check-button">Verificar Rompecabezas</button>
+    <button id="next-level" style="display: none;">Siguiente Nivel</button>
+  </div>
+
+  <!-- Elemento de Audio para la música -->
+  <audio id="background-music" loop></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
