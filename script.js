@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
           attempts++;
           if (attempts >= maxAttempts) {
-            pinMessage.textContent = "Intentos máximos permitidos 😢";
+            pinMessage.textContent = "Intentos máximos permitidos 😢 💔💔 me rompiste el cora.";
             pinBtns.forEach(b => b.disabled = true);
           } else {
             pinMessage.textContent = "PIN incorrecto. Intenta de nuevo.";
